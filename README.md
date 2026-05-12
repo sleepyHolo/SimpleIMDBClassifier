@@ -10,7 +10,7 @@ numpy                            1.26.2
 python                           3.11.5
 torch                            2.4.1+cu124
 ```
-除了为pytorch提供GPU加速的cuda，其他库都可以使用pip安装。  
+除了为pytorch提供GPU加速的cuda，其他库都可以使用pip安装。cuda并不是必须的。  
 
 ### 潜在问题
 脚本在命令行下运行时可能存在问题。运行环境实际上包括IPython Console。  
@@ -20,8 +20,8 @@ ipython                          8.27.0
 ```
 
 # 使用
-```torch_train.py```基于pytorch训练分类器模型。一旦训练完成，```torch_run.py```可以使用最新的检查点恢复模型并提供命令行IO和模型交互。
-```numpy_train.py```尝试自行模拟自注意力机制，不涉及pytorch，也没有任何模型保存。使用的数据量比torch版本更少。不过值得注意的是，模型存在问题，并不能很好学习数据。
+```torch_train.py```基于pytorch训练分类器模型。一旦训练完成，```torch_run.py```可以使用最新的检查点恢复模型并提供命令行IO和模型交互。  
+```numpy_train.py```尝试自行模拟自注意力机制，不涉及pytorch，也没有任何模型保存。使用的数据量比torch版本更少。不过值得注意的是，模型存在问题，并不能很好学习数据。  
 
 # 杂项
 ### ISSUE & PR
